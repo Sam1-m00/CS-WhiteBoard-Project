@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .login-container {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .form-group {
+      margin: 10px 0;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .login-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0074d9;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .login-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+<div class="login-container">
+  <img src="https://od.data.gov.sa/Data/uploads/group/2022-02-20-085707.058572logo.png" alt="Logo" height="100">
+  <h2>Login</h2>
+  <form action="javascript:void(0);" onsubmit="return validateCredentials()">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit" class="login-button">Log In</button>
+  </form>
+</div>
+
+<script>
+  function validateCredentials() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if (username === "admin" && password === "1234") {
+      alert("Login successful! Redirecting to welcome.html...");
+      window.location.href = "welcome.html";
+      return false;
+    } else {
+      alert("Invalid username or password. Please try again.");
+      return false;
+    }
+  }
+</script>
+</body>
+</html>
