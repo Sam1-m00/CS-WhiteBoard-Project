@@ -1,9 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Welcome Home</title>
+  <title>CMS Homepage</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-image: url(https://www.academyfront.com/images/blog/positive-perceptions.png);
+      width: 100%;
+      background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%) url(J.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 109vh;
+      background-repeat: no-repeat;
+    }
+
+    .header {
+      background-color: #faebd7;
+      padding: 15px;
+      
+     
+      
+    }
+
+    .header h1 {
+      text-align: center;
+    }
+
+    .main {
+      padding: 20px;
+      
+    }
+
+    .course {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .course-image {
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+    }
+
+    .course-title {
+      font-size: 20px;
+      font-weight: bold;
+    color: #000000;
+    background-color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+      
+      
+    }
+
+    .course-description {
+      margin: 10px 0;
+      color: #000000;
+    background-color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+    .course-button {
+      background-color: #288ba8;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .footer {
+      text-align: center;
+      width: 100px;
+      height: 70%;
+      position: relative;
+      bottom: 270px;
+ 
+    }
+    .toolbar {
+  position: relative;
+  bottom: 350px;
+  left: 1000px;
+  width: 100px;
+  height: 150px;
+  padding: 150px;
+}
+
+.toolbar h1 {
+  color: #000000;
+  position: relative;
+  bottom: 170px;
+  left: 125px;
+  text-align: center;
+  background-color: #faebd7;
+  font-size: 25px;
+
+
+}
+
+.toolbar h2 {
+  text-align: center;
+  position: relative;
+  bottom: 170px;
+  left: 125px;
+
+
+}
+.toolbar button {
+  background-color: #288ba8;
+  position: relative;
+  bottom: 170px;
+  left: 125px;
+  text-align: center;
+  width: 130px;
+  height: 45px;
+  font-size: large;
+
+}
+
+  </style>
 </head>
 <body>
-<h1>Welcome Home</h1>
+  <header class="header">
+    <h1>CMS Homepage</h1>
+  </header>
+
+  <main class="main">
+    <div class="course">
+      <img src="A.jpg" alt="Course 1" class="course-image">
+      <h2 class="course-title">Course 1</h2>
+      <p class="course-description">This is a description of Course 1.</p>
+      <a href="#" class="course-button">View Course</a>
+    </div>
+
+    <div class="course">
+      <img src="B.jpg" alt="Course 2" class="course-image">
+      <h2 class="course-title">Course 2</h2>
+      <p class="course-description">This is a description of Course 2.</p>
+      <a href="#" class="course-button">View Course</a>
+    </div>
+
+    <div class="course">
+      <img src="C.jpg" alt="Course 3" class="course-image">
+      <h2 class="course-title">Course 3</h2>
+      <p class="course-description">This is a description of Course 3.</p>
+      <a href="#" class="course-button">View Course</a>
+    </div>
+  </main>
+  <div class="toolbar">
+    <h1>Toolbar</h1>
+    <h2>Assignment</h2>
+    <button> click here</button>
+    <h2>Quizzes</h2>
+    <button> click here</button>
+    <h2>Grades</h2>
+    <button> click here</button>
+  </div>
+
+  <footer class="footer"  >
+    Copyright &copy;  Group5
+  </header>
 </body>
 </html>

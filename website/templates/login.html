@@ -5,11 +5,18 @@
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
+      background-image: url(https://www.scoopearth.com/wp-content/uploads/2022/05/Spoken-English-for-kids.png);
+      width: 100%;
+      background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%) url(J.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 109vh;
+      background-repeat: no-repeat;
     }
     .login-container {
       width: 300px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 40px;
       border: 1px solid #ccc;
       border-radius: 5px;
       background-color: #f9f9f9;
@@ -66,11 +73,11 @@
 
     if (username === "admin" && password === "1234") {
       alert("Login successful! Redirecting to welcome.html...");
-      window.location.href = "welcome.html";
-      return false;
+      window.location.href = "welcome.html"; // Redirect to another page
+      return false; // Prevent the form from submitting
     } else {
       alert("Invalid username or password. Please try again.");
-      return false;
+      return false; // Prevent the form from submitting
     }
   }
 </script>
