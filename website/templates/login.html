@@ -1,85 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Login Page</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-image: url(https://www.scoopearth.com/wp-content/uploads/2022/05/Spoken-English-for-kids.png);
-      width: 100%;
-      background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%) url(J.jpg);
-      background-position: center;
-      background-size: cover;
-      height: 109vh;
-      background-repeat: no-repeat;
-    }
-    .login-container {
-      width: 300px;
-      margin: 0 auto;
-      padding: 40px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #f9f9f9;
-    }
-    .form-group {
-      margin: 10px 0;
-    }
-    label {
-      display: block;
-      font-weight: bold;
-    }
-    input[type="text"],
-    input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-    }
-    .login-button {
-      width: 100%;
-      padding: 10px;
-      background-color: #0074d9;
-      color: #fff;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-    .login-button:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-<body>
-<div class="login-container">
-  <img src="https://od.data.gov.sa/Data/uploads/group/2022-02-20-085707.058572logo.png" alt="Logo" height="100">
-  <h2>Login</h2>
-  <form action="javascript:void(0);" onsubmit="return validateCredentials()">
+{% extends "base.html" %}
+{% block title %}Login page{%endblock%}
+{% block StyleSheet %}{%endblock%}
+{% block Navbar %}Login{%endblock%}
+{% block BodyContent %}
+<form action="#" method="POST">
+    <h3 align="center">login</h3>
     <div class="form-group">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
     </div>
     <div class="form-group">
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
     </div>
-    <button type="submit" class="login-button">Log In</button>
-  </form>
-</div>
-
-<script>
-  function validateCredentials() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-
-    if (username === "admin" && password === "1234") {
-      alert("Login successful! Redirecting to welcome.html...");
-      window.location.href = "welcome.html"; // Redirect to another page
-      return false; // Prevent the form from submitting
-    } else {
-      alert("Invalid username or password. Please try again.");
-      return false; // Prevent the form from submitting
-    }
-  }
-</script>
-</body>
-</html>
+    <br />
+    <button type="submit" class = "btn btn-primary">Login</button>
+    
+    <div class="form-group">
+        <label for="password2">Don't have account register now!!</label>
+        <button class="btn btn-primary" action="#">Register</button>
+    </div>
+</form>
+{% endblock %}

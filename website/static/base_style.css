@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #2196f3;
+    --secondary-color: #f0f0f0;
+    --font-family: Arial, sans-serif;
+}
+  
+body {
+    margin: 20px;
+    font-family: var(--font-family);
+}
+  
+.contentClass {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}

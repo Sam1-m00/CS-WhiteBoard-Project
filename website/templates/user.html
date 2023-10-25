@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}User info{%endblock%}
+{% block StyleSheet %}{%endblock%}
+{% block Navbar %}User{%endblock%}
+{% block BodyContent %}
+<P>Welcome, {{user}}</P>
+
+<form action ="#" method = "POST">
+    <input type = "email" name="email" placeholder="Enter email" value="{{email if email}}"/>
+    <input type = "submit" name="submit"/>
+</form>
+
+{% endblock %}
