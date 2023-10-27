@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block title %}Login page{%endblock%}
-{% block StyleSheet %}{%endblock%}
+{% block StyleSheet %}<link href="../static/login_style.css" rel="stylesheet">{%endblock%}
 {% block Navbar %}Login{%endblock%}
 {% block BodyContent %}
 <form action="#" method="POST">
@@ -14,11 +14,11 @@
         <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
     </div>
     <br />
-    <button type="submit" class = "btn btn-primary">Login</button>
-    
-    <div class="form-group">
-        <label for="password2">Don't have account register now!!</label>
-        <button class="btn btn-primary" action="#">Register</button>
+    <div class="submitButton">
+        <button type="submit" class = "btn btn-primary">Login</button>
+        <br />
     </div>
+    <div style="text-align: center;">
+        <br/><span class="help-block">You don't have account?&nbsp&nbsp&nbsp&nbsp<a href="/register" id="id_signup_link">Click to Register Now!</a></span></div>
 </form>
 {% endblock %}

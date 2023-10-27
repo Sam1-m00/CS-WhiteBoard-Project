@@ -1,7 +1,15 @@
 {% extends "base.html" %}
 {% block title %}Home page{%endblock%}
-{% block StyleSheet %}{%endblock%}
-{% block Navbar %}Navbar{%endblock%}
+{% block StyleSheet %}<link href="../static/index_style.css" rel="stylesheet">{%endblock%}
+{% block Navbar %}Dashboard{%endblock%}
 {% block BodyContent %}
-<P>Home page</P>
+<P>
+    <div class="">
+        <h3>Tool bar</h3>
+        <a class="dropdown-item" href="/homepage">homepage</a>
+        <a class="dropdown-item" href="#">Assignment</a>
+        <a class="dropdown-item" href="#">Quizzes</a>
+        <a class="dropdown-item" href="#">Grades</a>
+    </div>
+</P>
 {% endblock %}
